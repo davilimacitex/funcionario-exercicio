@@ -20,5 +20,8 @@ public class Seguranca {
     public void armar() {
         System.out.println(getNome() + " está vigiando armado o setor " + setor ".");
     }
+    public void vigiar() {
+        System.out.println(getNome()+ "está vigiando.");
+    }
 
 }
