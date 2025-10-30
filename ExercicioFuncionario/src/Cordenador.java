@@ -1,24 +1,27 @@
-public class Seguranca {
+public class Cordenador extends Funcionario {
+    private String equipe;
     private String setor;
-    private boolean armado;
-
-    public Seguranca(String nome, int idade, double salario, String setor, boolean armado) {
+    public Coordenador( String nome, Int Idade, double salario, String equipe, String setor) {
         super(nome, idade, salario);
+        this.equipe = equipe;
         this.setor = setor;
-        this.armado = armado;
+    }
+    public String getEquipe() {
+        return equipe;
+    }
+    public void setEquipe(String equipe) {
+        this.equipe = equipe;
     }
     public String getSetor() {
         return setor;
     }
-    public void setArmado(boolean armado) {
-        this.armado = armado;
+    public void setSetor(String setor) {
+        this.setor = setor;
     }
     @Override
-    public void trabalhar() {
-        System.out.println(getNome() + " está vigiando o setor " + setor ".");
+    public void exibirinformacoes() {
+        System.out.println(getNome() + "Setor " + setor + ".");
     }
-    public void armar() {
-        System.out.println(getNome() + " está vigiando armado o setor " + setor ".");
+    public void liderar() {
+        System.out.println(getNome() + " está liderando." )
     }
-
-}
